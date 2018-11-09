@@ -9,14 +9,38 @@
 		<link rel="stylesheet" type="text/css" media="all" href="./style.css?v=1" /> 
 	</head>
 	<body>
+		<div id="overlay">
+			<button id="closeOverlay"><img src="buttons/close.svg" alt="x" title="Close"></button>
+			<button id="left" onclick="previous()"><img src="buttons/left.svg" alt="<" title="Previous"></button>
+			<button id="right" onclick="next()"><img src="buttons/right.svg" alt=">" title="Next"></button>
+			<figure>
+				<img id="mainImage" importance="high" src="./test/px800/DSC_3031.JPG" srcset="
+					./test/px800/DSC_3031.JPG 800w,
+					./test/px1200/DSC_3031.JPG 1200w,
+					./test/px1600/DSC_3031.JPG 1600w,
+					./test/px2000/DSC_3031.JPG 2000w
+				" alt="DSC_3031.JPG">
+				<figcaption>
+					<h2>DSC_3031.JPG</h2>
+				</figcaption>
+			</figure>
+		</div>
+
+		<div id="preload">
+		</div>
+
+		
 		<header>
 			<h1>Italy</h1>
 		</header>
-		<section>
-			$CONTENT
+		<section id="main">
+$CONTENT
 		</section>
 		<footer>
 			All images CC-BY-SA 4.0 by Roland Rytz
 		</footer>
+
+		<script src="./metadata.js" type="text/javascript"></script>
+		<script src="./foton.js" type="text/javascript"></script>
 	</body>		
 </html>

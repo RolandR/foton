@@ -9,132 +9,153 @@
 		<link rel="stylesheet" type="text/css" media="all" href="./style.css?v=1" /> 
 	</head>
 	<body>
+		<div id="overlay">
+			<button id="closeOverlay"><img src="buttons/close.svg" alt="x" title="Close"></button>
+			<button id="left"><img src="buttons/left.svg" alt="<" title="Previous"></button>
+			<button id="right"><img src="buttons/right.svg" alt=">" title="Next"></button>
+			<figure>
+				<img id="mainImage" importance="high" src="./test/px800/DSC_3031.JPG" srcset="
+					./test/px800/DSC_3031.JPG 800w,
+					./test/px1200/DSC_3031.JPG 1200w,
+					./test/px1600/DSC_3031.JPG 1600w,
+					./test/px2000/DSC_3031.JPG 2000w
+				" alt="DSC_3031.JPG">
+				<figcaption>
+					<h2>DSC_3031.JPG</h2>
+				</figcaption>
+			</figure>
+		</div>
+
+		<div id="preload">
+		</div>
+
+		
 		<header>
 			<h1>Italy</h1>
 		</header>
-		<section>
-						<div>
-				<figure>
+		<section id="main">
+			<div>
+				<figure data-image="DSC_2990.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_2990.JPG" alt="DSC_2990.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_2994.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_2994.JPG" alt="DSC_2994.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_2998.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_2998.JPG" alt="DSC_2998.JPG" width="200" height="300">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3006.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3006.JPG" alt="DSC_3006.JPG" width="200" height="300">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3008.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3008.JPG" alt="DSC_3008.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3015.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3015.JPG" alt="DSC_3015.JPG" width="200" height="300">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3031.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3031.JPG" alt="DSC_3031.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3144.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3144.JPG" alt="DSC_3144.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3167.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3167.JPG" alt="DSC_3167.JPG" width="200" height="300">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3192.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3192.JPG" alt="DSC_3192.JPG" width="200" height="300">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3197.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3197.JPG" alt="DSC_3197.JPG" width="200" height="300">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3256.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3256.JPG" alt="DSC_3256.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3264.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3264.JPG" alt="DSC_3264.JPG" width="200" height="300">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3296.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3296.JPG" alt="DSC_3296.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3309.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3309.JPG" alt="DSC_3309.JPG" width="300" height="264">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3323.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3323.JPG" alt="DSC_3323.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3335.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3335.JPG" alt="DSC_3335.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3354.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3354.JPG" alt="DSC_3354.JPG" width="300" height="202">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3377.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3377.JPG" alt="DSC_3377.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3397.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3397.JPG" alt="DSC_3397.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3424.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3424.JPG" alt="DSC_3424.JPG" width="200" height="300">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3436.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3436.JPG" alt="DSC_3436.JPG" width="300" height="170">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3453.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3453.JPG" alt="DSC_3453.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3467.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3467.JPG" alt="DSC_3467.JPG" width="300" height="200">
 				</figure>
 			</div>
 			<div>
-				<figure>
+				<figure data-image="DSC_3514.JPG" onclick="showPhoto(this);">
 					<img src="test/thumbs/DSC_3514.JPG" alt="DSC_3514.JPG" width="300" height="200">
 				</figure>
 			</div>
@@ -143,5 +164,8 @@
 		<footer>
 			All images CC-BY-SA 4.0 by Roland Rytz
 		</footer>
+
+		<script src="./metadata.js" type="text/javascript"></script>
+		<script src="./foton.js" type="text/javascript"></script>
 	</body>		
 </html>
