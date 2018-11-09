@@ -1,0 +1,17 @@
+{
+	path: test/,
+	images: [
+		DSC_0009.JPG,
+		DSC_0005.JPG,
+		DSC_0256.JPG,
+		DSC_0222.JPG,
+		DSC_0240.JPG,
+		DSC_0018.JPG,
+		DSC_0183.JPG,
+		DSC_0138.JPG,
+		DSC_0002.JPG,
+		DSC_0158.JPG,
+		DSC_0193.JPG,
+		DSC_0281.JPG
+	]
+}
