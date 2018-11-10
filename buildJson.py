@@ -9,6 +9,13 @@ import PIL.ExifTags
 import json
 import pprint
 
+def humanReadableSize(num, suffix='B'):
+    for unit in ['','K','M','G','T','P','E','Z']:
+        if abs(num) < 1000.0:
+            return "%3.1f%s%s" % (num, unit, suffix)
+        num /= 1000.0
+    return "%.1f%s%s" % (num, 'Y', suffix)
+
 pp = pprint.PrettyPrinter()
 
 thumbSize = "300"
@@ -50,7 +57,7 @@ for index, file in enumerate(files):
 		print("["+str(index+1).zfill(len(str(len(files))))+"/"+str(len(files))+"] Skipping "+file+": Thumbnail exists")
 	else:
 		sys.stdout.write("["+str(index+1).zfill(len(str(len(files))))+"/"+str(len(files))+"] Converting "+file)
-		sys.stdout.write('.')
+		sys.stdout.write(".")
 		sys.stdout.flush()
 		cmd = "convert "+path+file+" -auto-orient -quality 80 -strip -interlace Plane -resize "+thumbSize+"x"+thumbSize+" "+path+thumbDirectory+file
 		os.system(cmd);
@@ -65,13 +72,10 @@ for index, file in enumerate(files):
 		print();
 
 	img = PIL.Image.open(path+file)
-	#exif = {
-	#	PIL.ExifTags.TAGS[k]: v
-	#	for k, v in img._getexif().items()
-	#	if k in PIL.ExifTags.TAGS
-	#}
-
 	exif = {}
+	
+	size = os.path.getsize(path+file)
+	size = humanReadableSize(size)
 
 	for k, v in img._getexif().items():
 		if k in PIL.ExifTags.TAGS and PIL.ExifTags.TAGS[k] != "MakerNote" and str(v)[0] != "b" and str(v)[0] != "{":
@@ -79,6 +83,7 @@ for index, file in enumerate(files):
 	
 	jsonString += "\t\t{\n"
 	jsonString += "\t\t\tfile: \""+file+"\",\n"
+	jsonString += "\t\t\tsize: \""+size+"\",\n"
 	jsonString += "\t\t\texif:"+pp.pformat(exif)+"\n"
 	jsonString += "\t\t}\n"
 	if index != len(files)-1:
@@ -104,3 +109,4 @@ indexHTML = indexHTML.replace("$CONTENT", outFigures);
 
 with open("bort.html", 'w') as htmlFile:
 	htmlFile.write(indexHTML)
+

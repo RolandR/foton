@@ -26,12 +26,12 @@ function display(file){
 	
 	currentlyDisplayed = file;
 	
-	var srcset = "PATH/px800/FILE 800w,\
-				  PATH/px1200/FILE 1200w,\
-				  PATH/px1600/FILE 1600w,\
-				  PATH/px2000/FILE 2000w";
+	var srcset = "PATHpx800/FILE 800w,\
+				  PATHpx1200/FILE 1200w,\
+				  PATHpx1600/FILE 1600w,\
+				  PATHpx2000/FILE 2000w";
 
-	var src = "PATH/px800/FILE";
+	var src = "PATHpx800/FILE";
 
 	srcset = srcset.replace(/PATH/g, metadata.path);
 	srcset = srcset.replace(/FILE/g, file);
@@ -44,6 +44,10 @@ function display(file){
 
 	img.srcset = srcset;
 	img.src = src;
+
+	document.getElementById("xofy").innerHTML = "Image "+(getImageIndex(file)+1)+" of "+metadata.images.length;
+	document.getElementById("originalImage").href = metadata.path + file;
+	document.getElementById("imageSize").innerHTML = getImageMetadata(file).size;
 }
 
 function next(){
@@ -67,7 +71,7 @@ function previous(){
 function getImageMetadata(imageName){
 	for(var i = 0; i < metadata.images.length; i++){
 		if(metadata.images[i].file == imageName){
-			return images[i];
+			return metadata.images[i];
 		}
 	}
 }

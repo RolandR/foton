@@ -14,6 +14,15 @@
 	box-sizing: border-box;
 }
 
+a{
+	text-decoration: none;
+	color: #FFAA00;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
 html, body{
 	width: 100%;
 	height: 100%;
@@ -25,6 +34,37 @@ body{
 	background-color: #222222;
 	display: flex;
 	flex-direction: column;
+}
+
+header, footer{
+	background-color: #444444;
+}
+
+header{
+	text-align: center;
+	padding: 10px 5px;
+	text-shadow: 1px 1px 0px #000000;
+}
+
+h1{
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 1.2em;
+	text-shadow: 2px 2px 0px #000000;
+}
+
+header > p{
+	font-size: 17px;
+}
+
+header > *{
+	margin: 0px 10px;
+}
+
+footer{
+	text-align: right;
+	padding: 3px 5px;
+	font-size: 17px;
 }
 
 #main{
@@ -87,7 +127,7 @@ body{
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-	padding: 70px 100px;
+	padding: 70px 100px 20px 100px;
 	display: flex;
 	flex-direction: column;
 }
@@ -97,6 +137,15 @@ body{
 	min-height: 0;
 	object-fit: contain;
 	object-position: 50% 50%;
+}
+
+#overlay figcaption{
+	text-align: right;
+	padding: 5px 0px;
+}
+
+#overlay figcaption>*{
+	display: block;
 }
 
 #preload{

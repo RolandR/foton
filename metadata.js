@@ -3,6 +3,7 @@ var metadata = {
 	images: [
 		{
 			file: "DSC_2990.JPG",
+			size: "12.3MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -51,6 +52,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_2994.JPG",
+			size: "12.5MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -99,6 +101,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_2998.JPG",
+			size: "11.3MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -147,6 +150,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3006.JPG",
+			size: "18.4MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -195,6 +199,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3008.JPG",
+			size: "12.8MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -243,6 +248,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3015.JPG",
+			size: "11.1MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -291,6 +297,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3031.JPG",
+			size: "10.2MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -339,6 +346,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3144.JPG",
+			size: "11.8MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -387,6 +395,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3167.JPG",
+			size: "10.5MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -435,6 +444,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3192.JPG",
+			size: "7.3MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -483,6 +493,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3197.JPG",
+			size: "5.9MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -531,6 +542,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3256.JPG",
+			size: "10.1MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -579,6 +591,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3264.JPG",
+			size: "10.4MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -627,6 +640,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3296.JPG",
+			size: "11.0MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -675,6 +689,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3309.JPG",
+			size: "9.7MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -723,6 +738,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3323.JPG",
+			size: "20.3MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -771,6 +787,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3335.JPG",
+			size: "13.2MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -819,6 +836,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3354.JPG",
+			size: "5.2MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -867,6 +885,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3377.JPG",
+			size: "13.8MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -915,6 +934,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3397.JPG",
+			size: "9.9MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -963,6 +983,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3424.JPG",
+			size: "15.2MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -1011,6 +1032,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3436.JPG",
+			size: "6.5MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -1059,6 +1081,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3453.JPG",
+			size: "11.3MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -1107,6 +1130,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3467.JPG",
+			size: "20.2MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
@@ -1155,6 +1179,7 @@ var metadata = {
 ,
 		{
 			file: "DSC_3514.JPG",
+			size: "10.1MB",
 			exif:{'Artist': '                                    ',
  'ColorSpace': 1,
  'CompressedBitsPerPixel': (4, 1),
