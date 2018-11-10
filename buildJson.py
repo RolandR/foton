@@ -20,6 +20,7 @@ pp = pprint.PrettyPrinter()
 
 thumbSize = "300"
 thumbDirectory = "thumbs/"
+zipDirectory = "zip/"
 
 sizes = [800, 1200, 1600, 2000]
 
@@ -35,9 +36,6 @@ with open("figure.html", 'r') as figureFile:
 path = sys.argv[1]
 files = [f for f in sorted(listdir(path)) if isfile(join(path, f))]
 
-#os.system("rm -r "+path+thumbDirectory)
-#os.system("mkdir "+path+thumbDirectory)
-
 if not os.path.isdir(path+thumbDirectory):
 	os.system("mkdir "+path+thumbDirectory)
 
@@ -45,6 +43,23 @@ for size in sizes:
 	directory = "px"+str(size)+"/"
 	if not os.path.isdir(path+directory):
 		os.system("mkdir "+path+directory)
+
+if not os.path.isdir(path+zipDirectory):
+	os.system("mkdir "+path+zipDirectory)
+
+zipfile = "italy.zip"
+
+if not os.path.isfile(path+zipDirectory+zipfile):
+	print("Creating zip file")
+	os.system("zip "+path+zipDirectory+zipfile+" "+path+"*.JPG")
+else:
+	print("Skipping zip file")
+
+zipSize = os.path.getsize(path+zipDirectory+zipfile)
+zipSize = humanReadableSize(zipSize)
+
+indexHTML = indexHTML.replace("$ARCHIVESIZE",zipSize);
+indexHTML = indexHTML.replace("$ARCHIVE", path+zipDirectory+zipfile);
 
 jsonString = "var metadata = {\n"
 jsonString += "\tpath:\""+path+"\",\n"
