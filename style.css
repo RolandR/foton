@@ -72,7 +72,7 @@ body{
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-	background-color: rgba(50, 50, 50, 0.95);
+	background-color: rgba(30, 30, 30, 0.95);
 	display: none;
 	opacity: 0;
 	transition: opacity;
@@ -118,6 +118,7 @@ button > img{
 	opacity: 0.5;
 	transition: opacity;
 	transition-duration: 250ms;
+	outline: none;
 }
 
 #closeOverlay:hover, #right:hover, #left:hover{
